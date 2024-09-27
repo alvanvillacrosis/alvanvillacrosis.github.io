@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple jQuery Example</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+        #message {
+            margin-top: 20px;
+            padding: 10px;
+            background-color: #dff0d8;
+            color: #3c763d;
+            border: 1px solid #d6e9c6;
+            display: none;
+        }
+        button {
+            padding: 10px 15px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Welcome to the jQuery Demo</h1>
+    <p>Click the button below to display a message using jQuery:</p>
+    
+    <button id="showMessageBtn">Show Message</button>
+
+    <div id="message">Hello! This message was shown using jQuery.</div>
+
+    <script>
+        $(document).ready(function() {
+            $("#showMessageBtn").click(function() {
+                $("#message").slideDown();
+            });
+        });
+    </script>
+
+</body>
+</html>
