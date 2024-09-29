@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Simple jQuery Example</title>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://localhost:44389/assets/ubind.js"></script>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -35,6 +36,11 @@
     <button id="showMessageBtn">Show Message</button>
 
     <div id="message">Hello! This message was shown using jQuery.</div>
+    <div id="ubind-portal" class="ubind-portal" data-tenant="freight-insure" data-portal="local"></div>
+    <div class="ubind-product" data-tenant="freight-insure" data-product-id="freight" data-environment="development"
+        data-organisation="freight-insure" data-portal="freight-insure" data-sidebar-offset="xs,75|sm,75|md,75|"
+        id="ubind-product" data-injection-id="ubind-webform-iframe---freight-insure---freight---freight---development"><div style="width: 40px; margin: auto; opacity: 1; transition: opacity 1.5s ease-in;">
+        <div class="material-preloader failure-symbol" style="height: 40px; width: 40px;"></div>
 
     <script>
         $(document).ready(function() {
